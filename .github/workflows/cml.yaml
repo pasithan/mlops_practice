@@ -12,9 +12,9 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
 	
-	#Commands start here
-	pip install -r requirement.txt
-	python train.py
+		#Commands start here
+		pip install -r requirement.txt
+		python train.py
 	
-	echo "MODEL MATRICS"
-	cat metrics.txt
+		echo "MODEL MATRICS"
+		cat metrics.txt
