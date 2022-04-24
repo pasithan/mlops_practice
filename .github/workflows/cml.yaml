@@ -13,8 +13,8 @@ jobs:
         run: |
 	
 		#Commands start here
-		pip install -r requirement.txt
-		python train.py
+		pip install -r requirements.txt
+		python train.py≈
 	
 		echo "MODEL MATRICS"
 		cat metrics.txt
