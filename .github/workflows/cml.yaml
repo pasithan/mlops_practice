@@ -1,4 +1,4 @@
-name: practice-ci-mlops
+name: model-training
 on: [push]
 jobs:
   run:
@@ -10,8 +10,8 @@ jobs:
       - name: Train model
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: 
-	  pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
           python train.py
 
           cat metrics.txt >> report.md
